@@ -1,0 +1,17 @@
+@keyframes putDown {
+  0% {
+    transform: scale3d(1.07, 1.07, 1.07);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

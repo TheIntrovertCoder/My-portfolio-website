@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "CourierPrime-Regular";
+    src: url("../fonts/CourierPrime-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+html *,
+body * {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-image: url("../images/884849.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shade {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card {
+    background-color: #444444;
+    color: white;
+    font-size: 15px;
+    width: 25em;
+    height: 37.5em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px black;
+    display: grid;
+    grid-template-rows: 200px auto;
+    padding-left: 9px;
+    padding-right: 9px;
+    animation: putDown 1s;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+}
+
+.card .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .header img {
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 100px;
+}
+
+.card .footer {
+    display: grid;
+    text-align: center;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card .footer h1 {
+    font-family: "Montserrat-Regular";
+    letter-spacing: 5px;
+}
+
+.card .footer p {
+    line-height: 1.7rem;
+    font-family: "Montserrat-SemiBold";
+    letter-spacing: 5px;
+}
+
+.card .footer .icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card .footer .icons a {
+    text-decoration: none;
+    height: 50px;
+    width: 70px;
+}
+
+.card .footer .icons .fab,
+.card .footer .icons .fas {
+    color: white;
+}
